@@ -1,6 +1,5 @@
 # Hi there 👋
 
-## 이런 환경에 익숙해요✍🏼
 
 <p>
   <img src="https://img.shields.io/badge/JAVA-007396?style=for-the-badge&logo=java&logoColor=white">
@@ -10,4 +9,4 @@
 
 ## 📕 Latest Blog Posts
 
-<ul></ul>
+<ul><li><a href='https://do-oya.tistory.com/1' target='_blank'>[자바 ORM JPA 프로그래밍] Chapter 1: JPA 소개</a></li></ul>
