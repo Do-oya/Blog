@@ -9,11 +9,10 @@ let text = `# Hi there 👋
 
 ## 이런 환경에 익숙해요✍🏼
 
-## 언어
-
 <p>
-  <img alt="" src= "https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=JavaScript&logoColor=white"/> 
-  <img alt="" src= "https://img.shields.io/badge/TypeScript-black?logo=typescript&logoColor=blue"/>
+  <img src="https://img.shields.io/badge/JAVA-007396?style=for-the-badge&logo=java&logoColor=white">
+  <img src="https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=Spring&logoColor=white">
+  <img src="https://img.shields.io/badge/Spring Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white">
 </p>
 
 ## 📕 Latest Blog Posts
@@ -34,7 +33,7 @@ const parser = new Parser({
     text += `<ul>`;
     
     // 최신 10개의 글의 제목과 링크를 가져온 후 text에 추가
-    for (let i = 0; i < 50; i++) {
+    for (let i = 0; i < 20; i++) {
         const {title, link} = feed.items[i];
         console.log(`${i + 1}번째 게시물`);
         console.log(`추가될 제목: ${title}`);
