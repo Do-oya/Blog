@@ -23,18 +23,21 @@ let text = `# Hi there 👋
 const parser = new Parser({
     headers: {
         Accept: 'application/rss+xml, application/xml, text/xml; q=0.1',
-    }});
+    }
+});
 
 (async () => {
 
-    // 피드 목록
+    // 피드 목록 가져오기
     const feed = await parser.parseURL('https://do-oya.tistory.com/rss'); // 본인의 블로그 주소
     
     text += `<ul>`;
-    
+
     // 최신 10개의 글의 제목과 링크를 가져온 후 text에 추가
-    for (let i = 0; i < 20; i++) {
-        const {title, link} = feed.items[i];
+    const numItems = Math.min(feed.items.length, 10);  // 최대 10개의 글만 처리
+
+    for (let i = 0; i < numItems; i++) {
+        const { title, link } = feed.items[i];
         console.log(`${i + 1}번째 게시물`);
         console.log(`추가될 제목: ${title}`);
         console.log(`추가될 링크: ${link}`);
